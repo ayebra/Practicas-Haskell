@@ -15,7 +15,9 @@ Find the last element of a list.
 	``` z ```
 - **Solution:**
 <img src="http://i63.tinypic.com/30v278z.png" border="0" alt="Image and video hosting by TinyPic">
+
 - - -
+
 
 ### **2.- Exercise 2**
 Find the penultimate element of a list.
