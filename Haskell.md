@@ -1,6 +1,6 @@
 # Ejercicios con Haskell
 ### Programación Lógica y Funcional
-##### Martínez Yebra Beatriz Andrea #13490929.
+##### Martínez Yebra Beatriz Andrea  #13490929.
 The following exercises are available at the following address: https://wiki.haskell.org/99_questions.
 
 - - -
@@ -416,7 +416,7 @@ Determine the greatest common divisor of two positive integers. Use Euclid's alg
 	``` [9,3,3] ```
 
 - **Solution:**
-<img src="http://i66.tinypic.com/bg8xux.jpg" border="0" alt="Image and video hosting by TinyPic">
+
 
 - - -
 
