@@ -21,12 +21,10 @@ Find the last element of a list.
 Find the penultimate element of a list.
 
 - **Example in Haskell:**
-
-
-	Prelude> myButLast [1,2,3,4]
-	3
-	Prelude> myButLast ['a'..'z']
-	'y'
+``` Prelude> myButLast [1,2,3,4] ```
+``` 3 ```
+``` Prelude> myButLast ['a'..'z'] ```
+``` 'y' ```
 - **Solution:**
 
 - - -
@@ -36,11 +34,10 @@ Find the number of items in a list.
 
 - **Example in Haskell:**
 
-
-	Prelude> myLength [123, 456, 789]
-	3
-	Prelude> myLength "Hello, world!"
-	13
+    ``` Prelude> myLength [123, 456, 789] ```
+	``` 3 ```
+	``` Prelude> myLength "Hello, world!" ```
+	``` 13 ```
 - **Solution:**
 
 - - -
@@ -49,13 +46,12 @@ Find the palindrome from a list. A palindrome can be read forwards or backwards;
 
 - **Example in Haskell:**
 
-
-	Main> isPalindrome [1,2,3]
-	False
-	Main> isPalindrome "madamimadam"
-	True
-	Main> isPalindrome [1,2,4,8,16,8,4,2,1]
-	True
+	``` Main> isPalindrome [1,2,3] ```
+	``` False ```
+	``` Main> isPalindrome "madamimadam" ```
+	``` True ```
+	``` Main> isPalindrome [1,2,4,8,16,8,4,2,1] ```
+	``` True ```
 - **Solution:**
 
 - - -
@@ -65,14 +61,13 @@ Delete consecutive duplicates of list items. If a list contains repeated element
 
 - **Example:**
 
-	* (compress '(a a a a b c c a a d e e e e))
-	  (A B C A D E)
+	``` (compress '(a a a a b c c a a d e e e e)) ```
+	``` (A B C A D E) ```
 
 - **Example in Haskell:**
 
-
-	> compress "aaaabccaadeeee"
-	"abcade"
+	``` > compress "aaaabccaadeeee" ```
+	``` "abcade" ```
 - **Solution:**
 
 - - -
@@ -82,14 +77,13 @@ Consecutive duplicate packages of list items in sublists. If a list contains rep
 
 - **Example:**
 
-	* (pack '(a a a a b c c a a d e e e e))
-	  ((A A A A) (B) (C C) (A A) (D) (E E E E))
+	``` (pack '(a a a a b c c a a d e e e e)) ```
+	``` ((A A A A) (B) (C C) (A A) (D) (E E E E)) ```
 
 - **Example in Haskell:**
 
-
-	*Main> pack ['a', 'a', 'a', 'a', 'b', 'c', 'c', 'a', 'a', 'd', 'e', 'e', 'e', 'e']
-	["aaaa","b","cc","aa","d","eeee"]
+	``` *Main> pack ['a', 'a', 'a', 'a', 'b', 'c', 'c', 'a', 'a', 'd', 'e', 'e', 'e', 'e'] ```
+	``` ["aaaa","b","cc","aa","d","eeee"] ```
 - **Solution:**
 
 - - -
@@ -98,14 +92,13 @@ Coding the execution length of a list. Use the result of problem P09 to implemen
 
 - **Example:**
 
-	* (encode '(a a a a b c c a a d e e e e))
-	  ((4 A) (1 B) (2 C) (2 A) (1 D)(4 E))
+	``` (encode '(a a a a b c c a a d e e e e)) ```
+	``` ((4 A) (1 B) (2 C) (2 A) (1 D)(4 E)) ```
 
 - **Example in Haskell:**
 
-
-	encode "aaaabccaadeeee"
-	[(4,'a'),(1,'b'),(2,'c'),(2,'a'),(1,'d'),(4,'e')]
+	``` encode "aaaabccaadeeee" ```
+	``` [(4,'a'),(1,'b'),(2,'c'),(2,'a'),(1,'d'),(4,'e')] ```
 - **Solution:**
 
 - - -
@@ -115,15 +108,14 @@ Modify the result of problem 10 in such a way that if an element does not have d
 
 - **Example:**
 
-	* (encode-modified '(a a a a b c c a a d e e e e))
-	  ((4 A) B (2 C) (2 A) D (4 E))
+	``` (encode-modified '(a a a a b c c a a d e e e e)) ```
+	 ```((4 A) B (2 C) (2 A) D (4 E)) ```
 
 - **Example in Haskell:**
 
-
-	P11> encodeModified "aaaabccaadeeee"
-	[Multiple 4 'a',Single 'b',Multiple 2 'c',
-	Multiple 2 'a',Single 'd',Multiple 4 'e']
+	 ``` P11> encodeModified "aaaabccaadeeee" ```
+	 ``` [Multiple 4 'a',Single 'b',Multiple 2 'c', ```
+	``` Multiple 2 'a',Single 'd',Multiple 4 'e'] ```
 - **Solution:**
 
 - - -
@@ -133,11 +125,10 @@ Given a list of generated runtime codes as specified in Problem 11. Build your u
 
 - **Example in Haskell:**
 
-
-	P12> decodeModified
-         [Multiple 4 'a',Single 'b',Multiple 2 'c',
-         Multiple 2 'a',Single 'd',Multiple 4 'e']
-	     "aaaabccaadeeee"
+	``` P12> decodeModified ```
+	 ```[Multiple 4 'a',Single 'b',Multiple 2 'c', ```
+	 ``` Multiple 2 'a',Single 'd',Multiple 4 'e'] ```
+	``` "aaaabccaadeeee" ```
 
 - **Solution:**
 
@@ -148,15 +139,14 @@ Directly implement the data compression method of run-length encoding. That is t
 
 - **Example:**
 
-		* (encode-direct '(a a a a b c c a a d e e e e))
-		  ((4 A) B (2 C) (2 A) D (4 E))
+	 ```* (encode-direct '(a a a a b c c a a d e e e e))```
+	``` ((4 A) B (2 C) (2 A) D (4 E)) ```
 
 - **Ejemplo en Haskell:**
 
-
-	P13> encodeDirect "aaaabccaadeeee"
-	[Multiple 4 'a',Single 'b',Multiple 2 'c',
-	 Multiple 2 'a',Single 'd',Multiple 4 'e']
+	 ``` P13> encodeDirect "aaaabccaadeeee" ```
+	 ``` [Multiple 4 'a',Single 'b',Multiple 2 'c', ```
+	 ``` Multiple 2 'a',Single 'd',Multiple 4 'e'] ```
 - **Solution:**
 
 - - -
@@ -165,14 +155,13 @@ Duplicate items in a list.
 
 - **Example:**
 
-	* (dupli '(a b c c d))
-	  (A A B B C C C C D D)
+	 ``` * (dupli '(a b c c d)) ```
+	 ``` (A A B B C C C C D D) ```
 
 - **Ejemplo en Haskell:**
 
-
-	> dupli [1, 2, 3]
-	  [1,1,2,2,3,3]
+	 ``` > dupli [1, 2, 3] ```
+	 ``` [1,1,2,2,3,3] ```
 
 - **Solution:**
 
@@ -182,15 +171,13 @@ Repeat items in a list a certain number of times.
 
 - **Example:**
 
-
-	* (repli '(a b c) 3)
-	  (A A A B B B C C C)
+	 ``` (repli '(a b c) 3) ```
+	``` (A A A B B B C C C) ```
 
 - **Example in Haskell:**
 
-
-	> repli "abc" 3
-	  "aaabbbccc"
+	``` > repli "abc" 3 ```
+ ``` "aaabbbccc" ```
 
 - **Solution:**
 
@@ -200,15 +187,13 @@ Delete each N'th element from a list.
 
 - **Example:**
 
-
-	* (drop '(a b c d e f g h i k) 3)
-	  (A B D E G H K)
+	 ``` (drop '(a b c d e f g h i k) 3) ```
+	 ```(A B D E G H K) ```
 
 - **Example in Haskell:**
 
-
-	*Main> dropEvery "abcdefghik" 3
-	"abdeghk"
+	``` *Main> dropEvery "abcdefghik" 3 ```
+	``` "abdeghk" ```
 
 - **Solution:**
 
@@ -219,15 +204,13 @@ Do not use predefined predicates.
 
 - **Example:**
 
-
-	* (split '(a b c d e f g h i k) 3)
-	  ( (A B C) (D E F G H I K))
+	 ``` (split '(a b c d e f g h i k) 3) ```
+	 ``` ( (A B C) (D E F G H I K)) ```
 
 - **Example in Haskell:**
 
-
-	*Main> split "abcdefghik" 3
-	("abc", "defghik")
+	 ``` *Main> split "abcdefghik" 3 ```
+	``` ("abc", "defghik") ```
 
 - **Solution:**
 
@@ -238,14 +221,13 @@ Given two indexes, i and k, the slice is the list that contains the elements bet
 
 - **Example:**
 
-	* (slice '(a b c d e f g h i k) 3 7)
-   	  (C D E F G)
+	``` (slice '(a b c d e f g h i k) 3 7) ```
+	 ``` (C D E F G) ```
 
 - **Example in Haskell:**
 
-
-	*Main> slice ['a','b','c','d','e','f','g','h','i','k'] 3 7
-	"cdefg"
+	 ```*Main> slice ['a','b','c','d','e','f','g','h','i','k'] 3 7 ```
+	``` "cdefg" ```
 - **Solution:**
 
 - - -
@@ -255,21 +237,17 @@ Tip: Use the length of the predefined functions and (++).
 
 - **Example:**
 
-
-	* (rotate '(a b c d e f g h) 3)
-	  (D E F G H A B C)
-
-	* (rotate '(a b c d e f g h) -2)
-	  (G H A B C D E F)
+	 ``` (rotate '(a b c d e f g h) 3) ```
+	 ``` (D E F G H A B C) ```
+	 ``` (rotate '(a b c d e f g h) -2) ```
+	 ``` (G H A B C D E F) ```
 
 - **Example in Haskell:**
 
-
-	*Main> rotate ['a','b','c','d','e','f','g','h'] 3
-	"defghabc"
-
-	*Main> rotate ['a','b','c','d','e','f','g','h'] (-2)
-	"ghabcdef"
+ 	``` *Main> rotate ['a','b','c','d','e','f','g','h'] 3 ```
+	 ``` "defghabc" ```
+	``` *Main> rotate ['a','b','c','d','e','f','g','h'] (-2) ```
+	``` "ghabcdef" ```
 
 - **Solution:**
 
@@ -279,18 +257,16 @@ Remove the K'th element from a list.
 
 - **Example in Prolog:**
 
-
-	?- remove_at(X,[a,b,c,d],2,R).
-	X = b
-	R = [a,c,d]
+	```  ?- remove_at(X,[a,b,c,d],2,R). ```
+	``` X = b ```
+	``` R = [a,c,d] ```
 
 Prolog also returns the deleted element.
 
 - **Example in Haskell:**
 
-
-	*Main> removeAt 2 "abcd"
-	('b',"acd")
+	``` *Main> removeAt 2 "abcd" ```
+	``` ('b',"acd") ```
 - **Solution:**
 
 - - -
@@ -299,14 +275,13 @@ Insert an item in a certain position in a list.
 
 - **Example:**
 
-	* (insert-at 'alfa '(a b c d) 2)
-	  (A ALFA B C D)
+	``` (insert-at 'alfa '(a b c d) 2) ```
+	```(A ALFA B C D) ```
 
 - **Example in Haskell:**
 
-
-	P21> insertAt 'X' "abcd" 2
-	"aXbcd"
+	``` P21> insertAt 'X' "abcd" 2 ```
+	``` "aXbcd" ```
 - **Solution:**
 
 - - -
@@ -315,15 +290,13 @@ Create a list that contains all integers within a given range.
 
 - **Example:**
 
-
-	* (range 4 9)
-  	  (4 5 6 7 8 9)
+	``` (range 4 9) ```
+	``` (4 5 6 7 8 9) ```
 
 - **Example in Haskell:**
 
-
-	Prelude> range 4 9
-	[4,5,6,7,8,9]
+	``` Prelude> range 4 9 ```
+	``` [4,5,6,7,8,9] ```
 
 - **Solution:**
 
@@ -333,14 +306,12 @@ Extract a given number of randomly selected items from a list.
 
 - **Example:**
 
-
-	* (rnd-select '(a b c d e f g h) 3)
-	  (E D A)
+	``` (rnd-select '(a b c d e f g h) 3) ```
+	``` (E D A) ```
 
 - **Ejemplo en Haskell:**
 
-
-	Prelude System.Random>rnd_select "abcdefgh" 3 >>= putStrLneda
+	``` Prelude System.Random>rnd_select "abcdefgh" 3 >>= putStrLneda ```
 
 - **Solution:**
 
@@ -350,15 +321,13 @@ Draw N different random numbers from 1..M.
 
 - **Example:**
 
-
-	* (rnd-select 6 49)
-	  (23 1 17 33 21 37)
+	``` (rnd-select 6 49) ```
+	``` (23 1 17 33 21 37) ```
 
 - **Example in Haskell:**
 
-
-	Prelude System.Random>diff_select 6 49
-	Prelude System.Random>[23,1,17,33,21,37]
+	``` Prelude System.Random>diff_select 6 49 ```
+	``` Prelude System.Random>[23,1,17,33,21,37] ```
 
 - **Solution:**
 
@@ -368,15 +337,13 @@ Generate a random permutation of items in a list.
 
 - **Example:**
 
-
-	* (rnd-permu '(a b c d e f))
- 	  (B A D C E F)
+	``` (rnd-permu '(a b c d e f)) ```
+ 	``` (B A D C E F) ```
 
 - **Example in Haskell:*
 
-
-	Prelude System.Random>rnd_permu "abcdef"
-	Prelude System.Random>"badcef"
+	``` Prelude System.Random>rnd_permu "abcdef" ```
+	``` Prelude System.Random>"badcef" ```
 
 - **Solution:**
 
@@ -386,15 +353,13 @@ Generate the combinations of K different objects chosen from the N elements of a
 
 - **Example:**
 
-
-	* (combinations 3 '(a b c d e f))
-	  ((A B C) (A B D) (A B E) ... )
+    ```(combinations 3 '(a b c d e f)) ```
+	``` ((A B C) (A B D) (A B E) ... ) ```
 
 - **Example in Haskell:**
 
-
-	> combinations 3 "abcdef"
-	["abc","abd","abe",...]
+	``` > combinations 3 "abcdef" ```
+	``` ["abc","abd","abe",...] ```
 
 - **Solution:**
 
@@ -404,15 +369,13 @@ Determine if a given integer is prime.
 
 - **Example:**
 
-
-	* (is-prime 7)
-	  T
+	 ``` (is-prime 7) ```
+	 ``` T ```
 
 - **Example in Haskell:**
 
-
-	P31> isPrime 7
-	True
+	``` P31> isPrime 7 ```
+	``` True ```
 
 - **Solution:**
 
@@ -422,15 +385,13 @@ Determine the greatest common divisor of two positive integers. Use Euclid's alg
 
 - **Example:**
 
-
-	* (gcd 36 63)
-	  9
+	``` (gcd 36 63) ```
+	``` 9 ```
 
 - **Example in Haskell:**
 
-
-	[myGCD 36 63, myGCD (-3) (-6), myGCD (-3) 6]
-	[9,3,3]
+	``` [myGCD 36 63, myGCD (-3) (-6), myGCD (-3) 6] ```
+	``` [9,3,3] ```
 
 - **Solution:**
 
@@ -440,15 +401,13 @@ Determine if two positive integers are coprime. Two numbers are coprime if their
 
 - **Example:**
 
-
-	* (coprime 35 64)
-	T
+ ``` (coprime 35 64) ```
+	``` T ```
 
 - **Example in Haskell:**
 
-
-	* coprime 35 64
-	  True
+	``` coprime 35 64 ```
+    ``` True ```
 
 - **Solution:**
 
@@ -458,15 +417,13 @@ Determine the prime factors of a given positive integer. Construct a list that c
 
 - **Example:**
 
-
-	* (prime-factors-mult 315)
-	  ((3 2) (5 1) (7 1))
+	``` (prime-factors-mult 315) ```
+	``` ((3 2) (5 1) (7 1)) ```
 
 - **Example in Haskell:**
 
-
-	*Main> prime_factors_mult 315
-	[(3,2),(5,1),(7,1)]
+	``` *Main> prime_factors_mult 315 ```
+	``` [(3,2),(5,1),(7,1)] ```
 
 - **Solution:**
 
@@ -477,8 +434,8 @@ Given a range of integers by their lower and upper boundaries, construct a list 
 
 - **Example in Haskell:**
 
-P29> primesR 10 20
-[11,13,17,19]
+	 ``` P29> primesR 10 20 ```
+	``` [11,13,17,19] ```
 
 - **Solution:**
 
@@ -490,15 +447,13 @@ Goldbach's conjecture says that each positive number equal to greater than 2 is 
 
 - **Example:**
 
-
-	* (goldbach 28)
-	  (5 23)
+	``` (goldbach 28) ```
+	``` (5 23) ```
 
 - **Example in Haskell:**
 
-
-	*goldbach 28
-	 (5, 23)
+	 ``` goldbach 28 ```
+	``` (5, 23) ```
 
 - **Solution:**
 
@@ -508,27 +463,25 @@ Given a range of integers by its lower and upper bound, print a list of all even
 
 - **Example:**
 
-
-	* (goldbach-list 9 20)
-	  10 = 3 + 7
-	  12 = 5 + 7
-	  14 = 3 + 11
-	  16 = 3 + 13
-	  18 = 5 + 13
-	  20 = 3 + 17
-	  * (goldbach-list 1 2000 50)
-	  992 = 73 + 919
-	  1382 = 61 + 1321
-	  1856 = 67 + 1789
-	  1928 = 61 + 1867
+	``` (goldbach-list 9 20) ```
+	 ```  10 = 3 + 7 ```
+	```   12 = 5 + 7 ```
+```	  14 = 3 + 11 ```
+	 ```  16 = 3 + 13 ```
+ ```	  18 = 5 + 13 ```
+```	  20 = 3 + 17 ```
+	```  * (goldbach-list 1 2000 50)```
+	```  992 = 73 + 919 ```
+```	  1382 = 61 + 1321 ```
+	```  1856 = 67 + 1789 ```
+```	  1928 = 61 + 1867 ```
 
 - **Example in Haskell:**
 
-
-	*Exercises> goldbachList 9 20
-	[(3,7),(5,7),(3,11),(3,13),(5,13),(3,17)]
-	*Exercises> goldbachList' 4 2000 50
-	[(73,919),(61,1321),(67,1789),(61,1867)]
+	 ``` *Exercises> goldbachList 9 20 ```
+	 ``` [(3,7),(5,7),(3,11),(3,13),(5,13),(3,17)] ```
+	 ``` *Exercises> goldbachList' 4 2000 50 ```
+	``` [(73,919),(61,1321),(67,1789),(61,1867)] ```
 
 
 - **Solution:**
@@ -543,21 +496,19 @@ Now, write a table of predicates / 3 that prints the truth table of a given logi
 
 - **Example:**
 
-
-	(table A B (and A (or A B)))
-	true true true
-	true fail true
-	fail true fail
-	fail fail fail
+     ``` (table A B (and A (or A B))) ```
+	``` true true true ```
+	``` true fail true ```
+	``` fail true fail ```
+	``` fail fail fail ```
 
 - **Example in Haskell:**
 
-
-	> table (\a b -> (and' a (or' a b)))
-	True True True
-	True False True
-	False True False
-	False False False
+	``` > table (\a b -> (and' a (or' a b))) ```
+	``` True True True ```
+	``` True False True ```
+	 ```False True False ```
+	``` False False False ```
 
 - **Solution:**
 
@@ -568,21 +519,19 @@ Continue problem P46 by defining y / 2, or / 2, etc. as operators. This allows t
 
 - **Example:**
 
-
-	* (table A B (A and (A or not B)))
- 	  true true true
-	  true fail true
-	  fail true fail
-	  fail fail fail
+	 ``` (table A B (A and (A or not B))) ```
+ 	  ``` true true true ```
+	 ``` true fail true ```
+	 ``` fail true fail ```
+	  ``` fail fail fail ```
 
 - **Example in Haskell:**
 
-
-	> table2 (\a b -> a `and'` (a `or'` not b))
-	True True True
-	True False True
-	False True False
-	False False False
+	``` > table2 (\a b -> a `and'` (a `or'` not b)) ```
+	``` True True True ```
+	``` True False True ```
+	``` False True False ```
+	``` False False False ```
 
 
 - **Solution:**
@@ -595,40 +544,38 @@ Generalize problem P47 such that the logical expression can contain any number o
 
 - **Example:**
 
-
-	* (table (A,B,C) (A and (B or C) equ A and B or A and C))
-	  true true true true
-	  true true fail true
-	  true fail true true
-	  true fail fail true
-	  fail true true true
-	  fail true fail true
-	  fail fail true true
-	  fail fail fail true
+	``` (table (A,B,C) (A and (B or C) equ A and B or A and C)) ```
+	```  true true true true ```
+	 ``` true true fail true ```
+	 ```  true fail true true ```
+	 ```  true fail fail true ```
+	```   fail true true true ```
+	 ``` fail true fail true ```
+	```  fail fail true true ```
+	 ``` fail fail fail true ```
 
 - **Examle in haskell:**
 
+	 ``` > tablen 3 (\[a,b,c] -> a `and'` (b `or'` c) `equ'` a `and'` b `or'` a `and'` c) ```
+	``` -- infixl 3 `equ'` ```
+	``` True  True  True  True ```
+	``` True  True  False True ```
+	``` True  False True  True ```
+	``` True  False False True ```
+``` 	False True  True  True ```
+```	False True  False True ```
+	``` False False True  True ```
+	``` False False False True ```
 
-	> tablen 3 (\[a,b,c] -> a `and'` (b `or'` c) `equ'` a `and'` b `or'` a `and'` c)
-	-- infixl 3 `equ'`
-	True  True  True  True
-	True  True  False True
-	True  False True  True
-	True  False False True
-	False True  True  True
-	False True  False True
-	False False True  True
-	False False False True
- 
-	-- infixl 7 `equ'`
-	True  True  True  True
-	True  True  False True
-	True  False True  True
-	True  False False False
-	False True  True  False
-	False True  False False
-	False False True  False
-	False False False False
+	``` -- infixl 7 `equ'` ```
+	``` True  True  True  True ```
+```	True  True  False True ```
+```	True  False True  True ```
+	``` True  False False False ```
+	 ``` False True  True  False ```
+	``` False True  False False ```
+	``` False False True  False ```
+	``` False False False False ```
 
 - **Solution:**
 
@@ -638,9 +585,9 @@ Gray codes.
 
 An n-bit gray code is a sequence of n-bit strings constructed according to certain rules. For example,
 
-N = 1: C (1) = ['0', '1'].
-N = 2: C (2) = ['00', '01', '11', '10'].
-N = 3: C (3) = ['000', '001', '011', '010', '110 ', '111', '101 ', '100'].
+ ``` N = 1: C (1) = ['0', '1']. ```
+``` N = 2: C (2) = ['00', '01', '11', '10']. ```
+``` N = 3: C (3) = ['000', '001', '011', '010', '110 ', '111', '101 ', '100']. ```
 
 Find the construction rules and write a predicate with the following specification:
 
@@ -651,9 +598,8 @@ More efficient, when it will be used repeatedly?
 
 - **Example in Haskell:**
 
-
-	P49> gray 3
-	["000","001","011","010","110","111","101","100"]
+   ``` P49> gray 3 ```
+	``` ["000","001","011","010","110","111","101","100"] ```
 
 - **Solution:**
 
@@ -667,9 +613,8 @@ We assume a set of symbols with their frequencies, given as a list of Terms fr (
 It is the Huffman code table for the frequency table Fs.
 
 **Example in Haskell:**
-
-	*Exercises> huffman [('a',45),('b',13),('c',12),('d',16),('e',9),('f',5)]
-	[('a',"0"),('b',"101"),('c',"100"),('d',"111"),('e',"1101"),('f',"1100")]
+	``` *Exercises> huffman [('a',45),('b',13),('c',12),('d',16),('e',9),('f',5)]
+	[('a',"0"),('b',"101"),('c',"100"),('d',"111"),('e',"1101"),('f',"1100")] ```
 
 - **Solution:**
 
