@@ -14,7 +14,7 @@ Find the last element of a list.
 	``` Prelude> myLast ['x','y','z'] ```
 	``` z ```
 - **Solution:**
-
+<img src="http://i63.tinypic.com/30v278z.png" border="0" alt="Image and video hosting by TinyPic">
 - - -
 
 ### **2.- Exercise 2**
@@ -26,9 +26,7 @@ Find the penultimate element of a list.
 ``` Prelude> myButLast ['a'..'z'] ```
 ``` 'y' ```
 - **Solution:**
-
-- - -
-
+<img src="http://i66.tinypic.com/212zivl.png" border="0" alt="Image and video hosting by TinyPic">
 ### **4- Exercise 4**
 Find the number of items in a list.
 
@@ -39,23 +37,9 @@ Find the number of items in a list.
 	``` Prelude> myLength "Hello, world!" ```
 	``` 13 ```
 - **Solution:**
+<img src="http://i65.tinypic.com/e8annm.png" border="0" alt="Image and video hosting by TinyPic">
 
 - - -
-### **6.- Exercise 6**
-Find the palindrome from a list. A palindrome can be read forwards or backwards; Example (x to m to x).
-
-- **Example in Haskell:**
-
-	``` Main> isPalindrome [1,2,3] ```
-	``` False ```
-	``` Main> isPalindrome "madamimadam" ```
-	``` True ```
-	``` Main> isPalindrome [1,2,4,8,16,8,4,2,1] ```
-	``` True ```
-- **Solution:**
-
-- - -
-
 ### **8.- Exercise 8**
 Delete consecutive duplicates of list items. If a list contains repeated elements, it must be replaced with a copy of the element. The order of the elements should not be changed.
 
@@ -69,9 +53,9 @@ Delete consecutive duplicates of list items. If a list contains repeated element
 	``` > compress "aaaabccaadeeee" ```
 	``` "abcade" ```
 - **Solution:**
+<img src="http://i67.tinypic.com/awoupz.png" border="0" alt="Image and video hosting by TinyPic">
 
 - - -
-
 ### **9.- Exercise 9**
 Consecutive duplicate packages of list items in sublists. If a list contains repeated elements, they must be placed in separate sublists.
 
@@ -85,7 +69,7 @@ Consecutive duplicate packages of list items in sublists. If a list contains rep
 	``` *Main> pack ['a', 'a', 'a', 'a', 'b', 'c', 'c', 'a', 'a', 'd', 'e', 'e', 'e', 'e'] ```
 	``` ["aaaa","b","cc","aa","d","eeee"] ```
 - **Solution:**
-
+<img src="http://i64.tinypic.com/jutqvp.png" border="0" alt="Image and video hosting by TinyPic">
 - - -
 ### **10.- Exercise 10**
 Coding the execution length of a list. Use the result of problem P09 to implement. The so-called run-length encoding data compression method. Consecutive duplicates of elements are coded as lists (N E) where N is the number of duplicates of element E.
@@ -100,25 +84,9 @@ Coding the execution length of a list. Use the result of problem P09 to implemen
 	``` encode "aaaabccaadeeee" ```
 	``` [(4,'a'),(1,'b'),(2,'c'),(2,'a'),(1,'d'),(4,'e')] ```
 - **Solution:**
-
+<img src="http://i68.tinypic.com/6t3edf.png" border="0" alt="Image and video hosting by TinyPic">
 - - -
-### **1- Exercise 11**
-Modified run length encoding.
-Modify the result of problem 10 in such a way that if an element does not have duplicates it is simply copied into the result list. Only items with duplicates are transferred as lists (N E).
 
-- **Example:**
-
-	``` (encode-modified '(a a a a b c c a a d e e e e)) ```
-	 ```((4 A) B (2 C) (2 A) D (4 E)) ```
-
-- **Example in Haskell:**
-
-	 ``` P11> encodeModified "aaaabccaadeeee" ```
-	 ``` [Multiple 4 'a',Single 'b',Multiple 2 'c', ```
-	``` Multiple 2 'a',Single 'd',Multiple 4 'e'] ```
-- **Solution:**
-
-- - -
 ### **2.- Exercise 12**
 Decode a coded run length list.
 Given a list of generated runtime codes as specified in Problem 11. Build your uncompressed version.
@@ -131,7 +99,7 @@ Given a list of generated runtime codes as specified in Problem 11. Build your u
 	``` "aaaabccaadeeee" ```
 
 - **Solution:**
-
+<img src="http://i66.tinypic.com/10p0xag.png" border="0" alt="Image and video hosting by TinyPic">
 - - -
 ### **3.- Exercise 13**
 Coding of execution length of a list (direct solution).
@@ -148,7 +116,7 @@ Directly implement the data compression method of run-length encoding. That is t
 	 ``` [Multiple 4 'a',Single 'b',Multiple 2 'c', ```
 	 ``` Multiple 2 'a',Single 'd',Multiple 4 'e'] ```
 - **Solution:**
-
+<img src="http://i64.tinypic.com/2ztm34m.png" border="0" alt="Image and video hosting by TinyPic">
 - - -
 ### **4.- Exercise 14**
 Duplicate items in a list.
@@ -164,7 +132,7 @@ Duplicate items in a list.
 	 ``` [1,1,2,2,3,3] ```
 
 - **Solution:**
-
+<img src="http://i66.tinypic.com/2ivk2gz.png" border="0" alt="Image and video hosting by TinyPic">
 - - -
 ### **5.- Exercise 15**
 Repeat items in a list a certain number of times.
@@ -180,7 +148,7 @@ Repeat items in a list a certain number of times.
  ``` "aaabbbccc" ```
 
 - **Solution:**
-
+<img src="http://i67.tinypic.com/282i7i0.png" border="0" alt="Image and video hosting by TinyPic">
 - - -
 ### **6.- Exercise 16**
 Delete each N'th element from a list.
