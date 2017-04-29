@@ -1,6 +1,6 @@
 # Ejercicios con Haskell
 ### Programación Lógica y Funcional
-##### Martínez Yebra Beatriz Andrea #13490929
+##### Martínez Yebra Beatriz Andrea #13490929.
 The following exercises are available at the following address: https://wiki.haskell.org/99_questions.
 
 - - -
