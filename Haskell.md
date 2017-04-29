@@ -438,7 +438,7 @@ Determine if two positive integers are coprime. Two numbers are coprime if their
 <img src="http://i66.tinypic.com/2upbfiq.jpg" border="0" alt="Image and video hosting by TinyPic">
 
 - - -
-
+ 
 
 ### **6.- Exercise 36**
 Determine the prime factors of a given positive integer. Construct a list that contains the prime factors and their multiplicity.
