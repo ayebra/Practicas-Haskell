@@ -27,6 +27,8 @@ Find the penultimate element of a list.
 ``` 'y' ```
 - **Solution:**
 <img src="http://i66.tinypic.com/212zivl.png" border="0" alt="Image and video hosting by TinyPic">
+- - -
+
 ### **4- Exercise 4**
 Find the number of items in a list.
 
@@ -38,8 +40,8 @@ Find the number of items in a list.
 	``` 13 ```
 - **Solution:**
 <img src="http://i65.tinypic.com/e8annm.png" border="0" alt="Image and video hosting by TinyPic">
-
 - - -
+
 ### **8.- Exercise 8**
 Delete consecutive duplicates of list items. If a list contains repeated elements, it must be replaced with a copy of the element. The order of the elements should not be changed.
 
@@ -54,8 +56,8 @@ Delete consecutive duplicates of list items. If a list contains repeated element
 	``` "abcade" ```
 - **Solution:**
 <img src="http://i67.tinypic.com/awoupz.png" border="0" alt="Image and video hosting by TinyPic">
-
 - - -
+
 ### **9.- Exercise 9**
 Consecutive duplicate packages of list items in sublists. If a list contains repeated elements, they must be placed in separate sublists.
 
@@ -71,6 +73,7 @@ Consecutive duplicate packages of list items in sublists. If a list contains rep
 - **Solution:**
 <img src="http://i64.tinypic.com/jutqvp.png" border="0" alt="Image and video hosting by TinyPic">
 - - -
+
 ### **10.- Exercise 10**
 Coding the execution length of a list. Use the result of problem P09 to implement. The so-called run-length encoding data compression method. Consecutive duplicates of elements are coded as lists (N E) where N is the number of duplicates of element E.
 
@@ -101,6 +104,7 @@ Given a list of generated runtime codes as specified in Problem 11. Build your u
 - **Solution:**
 <img src="http://i66.tinypic.com/10p0xag.png" border="0" alt="Image and video hosting by TinyPic">
 - - -
+
 ### **3.- Exercise 13**
 Coding of execution length of a list (direct solution).
 Directly implement the data compression method of run-length encoding. That is to say. Do not explicitly create sublists that contain duplicates, as in Problem 9, but only count them. As in Problem P11, simplify the list of results by substituting singleton lists (1 X) for X.
@@ -118,6 +122,7 @@ Directly implement the data compression method of run-length encoding. That is t
 - **Solution:**
 <img src="http://i64.tinypic.com/2ztm34m.png" border="0" alt="Image and video hosting by TinyPic">
 - - -
+
 ### **4.- Exercise 14**
 Duplicate items in a list.
 
@@ -134,6 +139,7 @@ Duplicate items in a list.
 - **Solution:**
 <img src="http://i66.tinypic.com/2ivk2gz.png" border="0" alt="Image and video hosting by TinyPic">
 - - -
+
 ### **5.- Exercise 15**
 Repeat items in a list a certain number of times.
 
@@ -150,6 +156,7 @@ Repeat items in a list a certain number of times.
 - **Solution:**
 <img src="http://i67.tinypic.com/282i7i0.png" border="0" alt="Image and video hosting by TinyPic">
 - - -
+
 ### **6.- Exercise 16**
 Delete each N'th element from a list.
 
@@ -166,6 +173,7 @@ Delete each N'th element from a list.
 - **Solution:**
 
 - - -
+
 ### **7.- Exercise 17**
 Split a list into two parts; The length of the first part is given.
 Do not use predefined predicates.
