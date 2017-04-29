@@ -1,12 +1,12 @@
 # Ejercicios con Haskell
 ### Programación Lógica y Funcional
-
+##### Martínez Yebra Beatriz Andrea #13490929
 The following exercises are available at the following address: https://wiki.haskell.org/99_questions.
 
 - - -
 
 ### **1.- Exercise 1**
-Find the last element of a list. 
+Find the last element of a list.
 - **Example in Haskell:**
 
 
